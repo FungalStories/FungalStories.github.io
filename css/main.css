@@ -1,4 +1,4 @@
-.jumbotron {
+#jumbotron-web-title {
     /* this is needed or the background will be offset by a few pixels at the top */
     /* overflow: auto;
     position: relative; */
@@ -6,6 +6,30 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 27%;
+    height: 50vh;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+#jumbotron-species-title {
+    /* this is needed or the background will be offset by a few pixels at the top */
+    /* overflow: auto;
+    position: relative; */
+    background-image: url(/assets/DE84E3D1-EB4E-49EE-B8AD-1C04DA6B2D33.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 43%;
+    height: 50vh;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+#jumbotron-Favolaschia_calocera-title {
+    /* this is needed or the background will be offset by a few pixels at the top */
+    /* overflow: auto;
+    position: relative; */
+    background-image: url(/assets/S__94830595.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 43%;
     height: 50vh;
     filter: drop-shadow(8px 8px 10px gray);
 }
@@ -29,6 +53,16 @@
     padding-top: 7vh;
 }
 
+#species-title {
+    color: white;
+    padding-top: 15vh;
+}
+
+#Favolaschia_calocera-title {
+    color: white;
+    padding-top: 11vh;
+}
+
 /* .dropdown-menu > li {
     display: inline-block;
     float:left;
@@ -50,33 +84,33 @@
     /* box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2); */
 }
 
-.nav-link:hover {    
+.nav-link:hover {
     /* font-weight: bold; */
     color: white !important;
     background-color: teal;
 }
 
-.custom-toggler .navbar-toggler-icon {    
+.custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='teal' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  
-  .custom-toggler.navbar-toggler {    
+}
+
+.custom-toggler.navbar-toggler {
     border: none;
-  }
+}
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
     outline: none;
-    box-shadow: none;   
+    box-shadow: none;
 }
 
 /* .navbar-toggler:hover {    
     background-color: teal;    
 } */
 
-.navbar-clicked {    
-    background-color: teal;    
+.navbar-clicked {
+    background-color: teal;
 }
 
 /* .navbar-toggler:hover, */
@@ -87,6 +121,11 @@
 .title .col-12 {
     padding-top: 50px;
     color: teal;
+}
+
+.text .col-12 {
+    padding-top: 50px;
+    color: black;
 }
 
 .species {
@@ -121,3 +160,93 @@
     max-height: 200px;
     object-fit: cover;
 }
+
+
+.forecast {
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+
+.forecast>h1,
+.day-forecast {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+
+
+
+#Favolaschia {
+    color: black;
+    background: right/contain content-box border-box no-repeat url('/assets/S__94830595.jpg') white;
+}
+
+#Favolaschia:hover {
+    color: white;
+    background: right/contain content-box border-box no-repeat url('/assets/S__94830595.jpg') teal;
+}
+
+#Clathrus {
+    color: black;
+    background: right/contain content-box border-box no-repeat url('https://upload.wikimedia.org/wikipedia/commons/f/f5/Clathrus_archeri.jpg') white;
+}
+
+#Clathrus:hover {
+    color: white;
+    background: right/contain content-box border-box no-repeat url('https://upload.wikimedia.org/wikipedia/commons/f/f5/Clathrus_archeri.jpg') teal;
+}
+
+#Teratosperma {
+    color: black;
+    background: right/contain content-box border-box no-repeat url('/assets/Teratosperma_dicranopteridis.png') white;
+}
+
+#Teratosperma:hover {
+    color: white;
+    background: right/contain content-box border-box no-repeat url('/assets/Teratosperma_dicranopteridis.png') teal;
+}
+
+
+
+.day-forecast>h2,
+.day-forecast>p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+
+
+.parent {
+    position: relative;
+}
+
+.block {
+    display: block;
+    text-decoration: none; 
+}
+
+
+
+
+.figure-img {
+    max-height: 400px;
+
+}
+
+
+
+/* .back {
+    width: 20vw;
+    color: white;
+    text-decoration: none;
+    background-color: coral;
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    border-radius: 20px;
+} */

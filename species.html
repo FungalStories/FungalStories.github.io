@@ -85,11 +85,9 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid text-center" id="jumbotron-web-title">
-        <div class="container" id="web-title">
-            <h1 class="display-3" style="font-weight: bold;">菌事</h1>
-            <h1 class="display-3" style="font-weight: bold;">Fungal Stories</h1>
-            <p class="lead">關於真菌的大小事</p>
+    <div class="jumbotron jumbotron-fluid text-center" id="jumbotron-species-title">
+        <div class="container" id="species-title">
+            <h1 class="display-3" style="font-weight: bold;">物種介紹</h1>
         </div>
     </div>
 
@@ -97,79 +95,51 @@
         <div class="row title">
             <div class="col-12 text-center" id="news">
 
-                <h2>近期文章</h2>
+                <h2>文章列表</h2>
                 <hr>
+
+                <!-- <div id="demo" class="paginationjs-theme-blue"></div> -->
 
                 <!-- <article>
                     <h1><a href="#" title="">橘黃膠孔菌</a></h1>
                     <img src="/assets/S__94830595.jpg" alt="" />
                     <p>隱身山林的異鄉客</p>
                   </article> -->
+                  
 
-                <!-- <article class="forecast">
-                    <h1>Weather forecast for Seattle</h1>
-                    <article class="day-forecast">
-                        <h2>03 March 2018</h2>
-                        <p>Rain.</p>
-                    </article>
-                    <article class="day-forecast">
+                <article class="forecast">
+                    
+                    <div class="parent">
+                        <a class="block" href="/articles_species/Favolaschia_calocera.html">
+                            <article class="day-forecast" id="Favolaschia">
+                                <h2>隱身山林的異鄉客—橘黃膠孔菌</h2>
+                                <p>2021/11/07</p>
+                            </article>
+                        </a> 
+                    </div>
+                    <div class="parent">
+                        <a class="block" href="#">
+                            <article class="day-forecast" id="Clathrus">
+                                <h2>惡魔的手指—阿切氏籠頭菌</h2>
+                                <p>2021/10/24</p>
+                            </article>
+                        </a> 
+                    </div>
+                    <div class="parent">
+                        <a class="block" href="#">
+                            <article class="day-forecast" id="Teratosperma">
+                                <h2>蕨類王國的纖巧居民—芒萁畸臂孢菌</h2>
+                                <p>2019/12/01</p>
+                            </article>
+                        </a> 
+                    </div>
+                                       
+                    <!-- <article class="day-forecast">
                         <h2>04 March 2018</h2>
                         <p>Periods of rain.</p>
-                    </article>
-                    <article class="day-forecast">
-                        <h2>05 March 2018</h2>
-                        <p>Heavy rain.</p>
-                    </article>
-                </article> -->
-
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="card">
-                            <div class="card-header species">
-                                物種介紹
-                            </div>
-                            <img src="/assets/S__94830595.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">隱身山林的異鄉客</h3>
-                                <p class="card-text">橘黃膠孔菌</p>
-                                <p class="card-text"><small class="text-muted">2021/10/24</small></p>
-                                <a href="/articles_species/Favolaschia_calocera.html" class="btn btn-success">進入文章</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4">
-                        <div class="card">
-                            <div class="card-header mycologist">
-                                真菌學家
-                            </div>
-                            <img src="https://portals.iucn.org/library/sites/library/files/styles/medium/public/photos/2029.jpg?itok=Kd40bd3H"
-                                class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">Roger Heim</h3>
-                                <p class="card-text">橘黃膠孔菌的發表者</p>
-                                <p class="card-text"><small class="text-muted">2021/11/07</small></p>
-                                <a href="#" class="btn btn-success">進入文章</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4">
-                        <div class="card">
-                            <div class="card-header resource">
-                                線上資源
-                            </div>
-                            <img src="/assets/index_fungorum.png" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">Index Fungorum</h3>
-                                <p class="card-text">世界三大真菌資料庫之一</p>
-                                <p class="card-text"><small class="text-muted">2021/10/24</small></p>
-                                <a href="#" class="btn btn-success">進入文章</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                    </article> -->
+                    
+                </article>
 
 
 
@@ -202,6 +172,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     -->
 
+    <!-- <script src="https://pagination.js.org/dist/2.1.5/pagination.js"></script> -->
+
     <script>
         var click_times = 0
         $(".navbar-toggler").click(function () {
@@ -215,6 +187,20 @@
             }
         })
     </script>
+
+    <!-- <script>
+        $('#demo').pagination({
+            dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            pageSize: 2,
+            autoHidePrevious: true,
+            autoHideNext: true,
+            callback: function (data, pagination) {
+                // template method of yourself
+                var html = template(data);
+                dataContainer.html(html);
+            }
+        })
+    </script> -->
 
 
 </body>
