@@ -87,8 +87,17 @@
 
     <div class="jumbotron jumbotron-fluid text-center" id="jumbotron-Favolaschia_calocera-title">
         <div class="container" id="Favolaschia_calocera-title">
-            <h1 class="display-3" style="font-weight: bold;">隱身山林的異鄉客</h1>            
+            <h1 class="display-3" style="font-weight: bold;">隱身山林的異鄉客</h1>
             <p class="lead">橘黃膠孔菌</p>
+        </div>
+    </div>
+
+    <div class="sticky-top" style="height: 30px; background-color:gray; top: 60px;">
+        <div id="statusbar" style="height: 30px; width: 0px; background-color: coral;"></div>
+        <div>
+            <h6 style="color: white; margin-top: -23px; margin-left: 5px;">隱身山林的異鄉客—橘黃膠孔菌</h6>
+            <!-- <h6 style="color: white; margin-top: -23px; margin-left: 5px;">隱身山林的異鄉客—橘黃膠孔菌&nbsp;&nbsp;<span
+                    id="scrollpercent">0</span>&nbsp;%</h6> -->
         </div>
     </div>
 
@@ -108,10 +117,11 @@
                 </div>
             </div>
 
-            
+
             <div class="col-12 text-center">
                 <figure class="figure">
-                    <img src="../assets/565866C8-2B19-4B4E-B40A-F825FED55F29.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <img src="../assets/565866C8-2B19-4B4E-B40A-F825FED55F29.jpg" class="figure-img img-fluid rounded"
+                        alt="...">
                     <figcaption class="figure-caption">另一張橘黃膠孔菌的照片</figcaption>
                 </figure>
             </div>
@@ -158,6 +168,21 @@
                 $(".navbar-toggler-icon").removeClass("navbar-icon-clicked");
             }
         })
+    </script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var document_h = $(document).height();
+                var window_w = $(document).width();
+                var window_h = $(window).height();
+                var max_scroll = document_h - window_h;
+                var current_pos = $(window).scrollTop();
+                var new_w = (current_pos / max_scroll) * window_w;
+                $("#statusbar").css("width", new_w);
+                // $("#scrollpercent").html(parseInt(current_pos * 100 / max_scroll));
+            });
+        });
     </script>
 
 
