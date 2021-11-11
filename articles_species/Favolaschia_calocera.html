@@ -92,7 +92,7 @@
         </div>
     </div>
 
-    <div class="sticky-top" style="height: 30px; background-color:gray; top: 60px;">
+    <div id="statusbar_outer_div" class="sticky-top" style="height: 30px; background-color:gray; top: 60px;">
         <div id="statusbar" style="height: 30px; width: 0px; background-color: coral;"></div>
         <div>
             <h6 style="color: white; margin-top: -23px; margin-left: 5px;">隱身山林的異鄉客—橘黃膠孔菌</h6>
@@ -162,10 +162,12 @@
             click_times = click_times + 1
             if (click_times % 2 == 1) {
                 $(".navbar-toggler").addClass("navbar-clicked");
-                $(".navbar-toggler-icon").addClass("navbar-icon-clicked");
+                $(".navbar-toggler-icon").addClass("navbar-icon-clicked");                
+                $("#statusbar_outer_div").css("top", 250);
             } else {
                 $(".navbar-toggler").removeClass("navbar-clicked");
                 $(".navbar-toggler-icon").removeClass("navbar-icon-clicked");
+                $("#statusbar_outer_div").css("top", 60);
             }
         })
     </script>
@@ -178,8 +180,15 @@
                 var window_h = $(window).height();
                 var max_scroll = document_h - window_h;
                 var current_pos = $(window).scrollTop();
-                var new_w = (current_pos / max_scroll) * window_w;
-                $("#statusbar").css("width", new_w);
+                // var new_w = (current_pos / max_scroll) * window_w;
+                // if (click_times % 2 == 1) {
+                //     console.log($(window).scrollTop());
+                //     $("#statusbar").css("width", ((current_pos - 190) / max_scroll) * window_w);
+                // } else {
+                //     console.log($(window).scrollTop());
+                //     $("#statusbar").css("width", (current_pos / max_scroll) * window_w);
+                // }
+                $("#statusbar").css("width", (current_pos / max_scroll) * window_w);
                 // $("#scrollpercent").html(parseInt(current_pos * 100 / max_scroll));
             });
         });
