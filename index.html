@@ -85,91 +85,181 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid text-center" id="jumbotron-web-title">
+
+    <!-- <div class="container" id="web-title">
+        <h1 class="display-3" style="font-weight: bold;">菌事</h1>
+        <h1 class="display-3" style="font-weight: bold;">Fungal Stories</h1>
+        <p class="lead">關於真菌的大小事</p>
+    </div> -->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="/assets/background.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>我菌生大師</h4>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="/assets/DE84E3D1-EB4E-49EE-B8AD-1C04DA6B2D33.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>某種多孔菌</h4>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="/assets/S__94830595.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>橘黃膠孔菌</h4>
+                </div>
+            </div>
+
+            <div class="text-center" id="web-title" style="position:absolute; width:100vw">
+                <h1 class="display-3" style="font-weight: bold;">菌事</h1>
+                <h1 class="display-3" style="font-weight: bold;">Fungal Stories</h1>
+                <p class="lead">關於真菌的大小事</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- <div class="jumbotron jumbotron-fluid text-center" id="jumbotron-web-title">
         <div class="container" id="web-title">
             <h1 class="display-3" style="font-weight: bold;">菌事</h1>
             <h1 class="display-3" style="font-weight: bold;">Fungal Stories</h1>
             <p class="lead">關於真菌的大小事</p>
         </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid">
+
         <div class="row title">
             <div class="col-12 text-center" id="news">
 
-                <h2>近期文章</h2>
-                <hr>
 
-                <!-- <article>
-                    <h1><a href="#" title="">橘黃膠孔菌</a></h1>
-                    <img src="/assets/S__94830595.jpg" alt="" />
-                    <p>隱身山林的異鄉客</p>
-                  </article> -->
+                <div class="row" style="margin-top: -50px;">
+                    <div class="col-12 col-lg-2"></div>
 
-                <!-- <article class="forecast">
-                    <h1>Weather forecast for Seattle</h1>
-                    <article class="day-forecast">
-                        <h2>03 March 2018</h2>
-                        <p>Rain.</p>
-                    </article>
-                    <article class="day-forecast">
-                        <h2>04 March 2018</h2>
-                        <p>Periods of rain.</p>
-                    </article>
-                    <article class="day-forecast">
-                        <h2>05 March 2018</h2>
-                        <p>Heavy rain.</p>
-                    </article>
-                </article> -->
+                    <div class="col-12 col-lg-8">
 
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="card">
-                            <div class="card-header species">
-                                物種介紹
+                        <h2>近期文章</h2>
+                        <hr>
+
+                        <div class="row" style="margin-top: -40px;">
+                            <div class="col-12 col-lg-4">
+                                <div class="card p-2 border-0 article-list">
+                                    <a class="card-block stretched-link text-decoration-none"
+                                        href="/articles_species/Favolaschia_calocera.html">
+                                        <div class="article-card-header">
+                                            <p class="card-text category-species">物種介紹</p>
+                                            <p class="card-text text-muted article-date"> 2021/11/07</p>
+                                        </div>
+                                        <img src="/assets/S__94830595.jpg" class="card-img-top">
+                                        <p> </p>
+                                        <h4 class="card-text">隱身山林的異鄉客</h4>
+                                        <p class="card-text"><small class="text-muted">橘黃膠孔菌</small></p>
+                                    </a>
+                                </div>
+                                <!-- <div class="card">
+                                    <div class="card-header species">
+                                        物種介紹
+                                    </div>
+                                    <img src="/assets/S__94830595.jpg" class="card-img-top">
+                                    <div class="card-body">
+                                        <h4 class="card-title">隱身山林的異鄉客</h4>
+                                        <p class="card-text">橘黃膠孔菌</p>
+                                        <p class="card-text"><small class="text-muted">2021/11/07</small></p>
+                                        <a href="/articles_species/Favolaschia_calocera.html"
+                                            class="btn btn-success">進入文章</a>
+                                    </div>
+                                </div> -->
                             </div>
-                            <img src="/assets/S__94830595.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">隱身山林的異鄉客</h3>
-                                <p class="card-text">橘黃膠孔菌</p>
-                                <p class="card-text"><small class="text-muted">2021/10/24</small></p>
-                                <a href="/articles_species/Favolaschia_calocera.html" class="btn btn-success">進入文章</a>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="card p-2 border-0 article-list">
+                                    <a class="card-block stretched-link text-decoration-none"
+                                        href="/articles_species/Favolaschia_calocera.html">
+                                        <div class="article-card-header">
+                                            <p class="card-text category-mycologist">真菌學家</p>
+                                            <p class="card-text text-muted article-date"> 2021/10/24</p>
+                                        </div>
+                                        <img src="https://portals.iucn.org/library/sites/library/files/styles/medium/public/photos/2029.jpg?itok=Kd40bd3H"
+                                            class="card-img-top">
+                                        <p> </p>
+                                        <h4 class="card-text">Roger Heim</h4>
+                                        <p class="card-text"><small class="text-muted">橘黃膠孔菌的發表者</small></p>
+                                    </a>
+                                </div>
+                                <!-- <div class="card">
+                                    <div class="card-header mycologist">
+                                        真菌學家
+                                    </div>
+                                    <img src="https://portals.iucn.org/library/sites/library/files/styles/medium/public/photos/2029.jpg?itok=Kd40bd3H"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Roger Heim</h4>
+                                        <p class="card-text">橘黃膠孔菌的發表者</p>
+                                        <p class="card-text"><small class="text-muted">2021/10/24</small></p>
+                                        <a href="#" class="btn btn-success">進入文章</a>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="card p-2 border-0 article-list">
+                                    <a class="card-block stretched-link text-decoration-none"
+                                        href="/articles_species/Favolaschia_calocera.html">
+                                        <div class="article-card-header">
+                                            <p class="card-text category-resource">線上資源</p>
+                                            <p class="card-text text-muted article-date"> 2021/10/24</p>
+                                        </div>
+                                        <img src="/assets/index_fungorum.png" class="card-img-top">
+                                        <p> </p>
+                                        <h4 class="card-text">Index Fungorum</h4>
+                                        <p class="card-text"><small class="text-muted">世界三大真菌資料庫之一</small></p>
+                                    </a>
+                                </div>
+                                <!-- <div class="card">
+                                    <div class="card-header resource">
+                                        線上資源
+                                    </div>
+                                    <img src="/assets/index_fungorum.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Index Fungorum</h4>
+                                        <p class="card-text">世界三大真菌資料庫之一</p>
+                                        <p class="card-text"><small class="text-muted">2021/10/24</small></p>
+                                        <a href="#" class="btn btn-success">進入文章</a>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
+
                     </div>
 
-                    <div class="col-12 col-lg-4">
-                        <div class="card">
-                            <div class="card-header mycologist">
-                                真菌學家
-                            </div>
-                            <img src="https://portals.iucn.org/library/sites/library/files/styles/medium/public/photos/2029.jpg?itok=Kd40bd3H"
-                                class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">Roger Heim</h3>
-                                <p class="card-text">橘黃膠孔菌的發表者</p>
-                                <p class="card-text"><small class="text-muted">2021/11/07</small></p>
-                                <a href="#" class="btn btn-success">進入文章</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4">
-                        <div class="card">
-                            <div class="card-header resource">
-                                線上資源
-                            </div>
-                            <img src="/assets/index_fungorum.png" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">Index Fungorum</h3>
-                                <p class="card-text">世界三大真菌資料庫之一</p>
-                                <p class="card-text"><small class="text-muted">2021/10/24</small></p>
-                                <a href="#" class="btn btn-success">進入文章</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-12 col-lg-2"></div>
 
                 </div>
+
+
+                <p>&nbsp;</p>
 
 
 
@@ -182,8 +272,10 @@
 
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright: 菌事 Fungal Stories
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); height: 80px;">
+            <p>© 2021 Copyright: 菌事 Fungal Stories</p>
+            <p style="margin-top: -10px;">Email: <a href="mailto: fungalstories@gmail.com">fungalstories@gmail.com</a>
+            </p>
         </div>
         <!-- Copyright -->
     </footer>
