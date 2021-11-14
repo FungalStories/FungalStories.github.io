@@ -10,9 +10,22 @@
     filter: drop-shadow(8px 8px 10px gray);
 }
 
+
+
 .carousel-item {
-    height: 90vh;    
+    height: 89vh;
 }
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 89vh;
+    object-fit: cover;
+}
+
+
+
 
 #jumbotron-species-title {
     /* this is needed or the background will be offset by a few pixels at the top */
@@ -176,15 +189,15 @@
 .article-list {
     border-radius: 4px;
     background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 14px 80px 18px 36px;
-  cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
 }
 
 .article-list:hover {
-     transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
 
 
@@ -196,25 +209,25 @@
 }
 
 .category-species {
-    width: 80px;        
+    width: 80px;
     color: white !important;
-    background-color: forestgreen;    
+    background-color: forestgreen;
     border-radius: 10px;
     display: inline-block;
 }
 
 .category-mycologist {
-    width: 80px;        
+    width: 80px;
     color: white !important;
-    background-color: coral;    
+    background-color: coral;
     border-radius: 10px;
     display: inline-block;
 }
 
 .category-resource {
-    width: 80px;        
+    width: 80px;
     color: white !important;
-    background-color: cornflowerblue;    
+    background-color: cornflowerblue;
     border-radius: 10px;
     display: inline-block;
 }
