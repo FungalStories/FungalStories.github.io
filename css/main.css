@@ -178,6 +178,7 @@
 .card-img-top {
     max-width: 100vw;
     max-height: 160px;
+    min-height: 160px;
     object-fit: cover;
 }
 
@@ -208,15 +209,15 @@
     float: left;
 }
 
-.category-species {
+.category-introduction {
     width: 80px;
     color: white !important;
-    background-color: forestgreen;
+    background-color: plum;
     border-radius: 10px;
     display: inline-block;
 }
 
-.category-mycologist {
+.category-species {
     width: 80px;
     color: white !important;
     background-color: coral;
@@ -224,10 +225,18 @@
     display: inline-block;
 }
 
-.category-resource {
+.category-mycologist {
     width: 80px;
     color: white !important;
     background-color: cornflowerblue;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.category-daily {
+    width: 80px;
+    color: white !important;
+    background-color: forestgreen;
     border-radius: 10px;
     display: inline-block;
 }
