@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>菌事 Fungal Stories</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="bookmark" href="/assets/favicon.ico" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto" href="/index.html">
+                <img src="/assets/logo.png" alt="" height="35" width="35">
+                &nbsp;&nbsp;菌事 Fungal Stories
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/introduction.html">真菌簡介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/species.html">物種介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/daily.html">日常真菌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/mycologist.html">真菌學家</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            真菌資料庫
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.facebook.com/aki.hoshino.9" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.instagram.com/akintaeyeon/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+                </ul>
+                <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="jumbotron jumbotron-fluid text-center article-big-picture">
+        <div class="container" id="Favolaschia_calocera-title">
+            <h1 class="display-3" style="font-weight: bold;">什麼是真菌？(1/2)</h1>
+            <p class="lead">What is a fungus? (1/2)</p>
+        </div>
+    </div> -->
+
+    <div class="container-fluid align-middle" style="padding-top: 20px;">
+        <div class="text-center">
+            <figure class="figure">
+                <img src="../assets/de_bary_title.png"
+                    class="figure-img img-fluid rounded" alt="...">
+                <!-- <figcaption class="figure-caption">另一張橘黃膠孔菌的照片</figcaption> -->
+            </figure>
+        </div>
+    </div>
+
+    <div id="statusbar_outer_div" class="sticky-top" style="height: 30px; background-color:gray; top: 60px;">
+        <div id="statusbar" style="height: 30px; width: 0px; background-color: coral;"></div>
+        <div>
+            <h6 style="color: white; margin-top: -23px; margin-left: 5px;">近代真菌學創始人狄巴里—The father of Mycology</h6>
+            <!-- <h6 style="color: white; margin-top: -23px; margin-left: 5px;">隱身山林的異鄉客—橘黃膠孔菌&nbsp;&nbsp;<span
+                    id="scrollpercent">0</span>&nbsp;%</h6> -->
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row text">
+            <div class="col-12 col-lg-2" style="align-items: center;">
+                <hr style="color: teal;">
+                <h6 class="text-center" style="color: teal;">文章資訊</h6>
+                <hr style="color: teal;">
+                <h6 style="font-size: small;">分類：<a href="../mycologist.html" style="color: teal;">真菌學家</a></h6>
+                <h6 style="font-size: small;">發布日期：2022/05/12</h6>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <!-- <h1 class="text-center">隱身山林的異鄉客—橘黃膠孔菌</h1> -->
+                <!-- <h2 class="text-center">第一段</h2> -->
+                <div class="card border-0">
+                    <div class="card-body">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西元1831年1月26日，在德國萊茵河畔的法蘭克福，一位嬰兒誕生了。他是奧格斯特（August Theodor de Bary）與艾蜜莉（Emilie Meyer de Bary）的次子、來自於比利時的古老貴族後裔，也是將來會被後世尊稱為近代真菌學創始人的漢瑞其·安東·狄巴里（Heinrich Anton de Bary, 1831-1888）。狄巴里之父奧格斯特是位醫生，因此很重視子女的教育，經常鼓勵孩子參加科學活動。狄巴里原本會像其父一樣走向醫生的道路，但是在少年時代參與的自然科學活動激發了他對植物學的愛好。
+                    </div>
+                </div>
+
+                <!-- <p>&nbsp;</p> -->
+
+                <!-- <h2 class="text-center">第二段</h2> -->
+                <div class="card border-0">
+                    <div class="card-body">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;狄巴里於1849年高中畢業以後，他開始在海德堡大學（Ruprecht Karl University of Heidelberg）和馬爾堡大學（Philipps University of Marburg）攻讀醫學和植物學。畢業後，他曾短暫的行醫，但還是壓抑不住內心的愛好，旋即到圖賓根大學（University of Tübingen）擔任植物學講師。1855年狄巴里獲得佛萊堡大學（University of Freiburg）的聘僱，擔任植物學教授與植物園主任。當時植物學隸屬於醫學院的一部分，可用於教學和研究的空間非常有限，儘管工作條件艱苦，但狄巴里在佛萊堡的時光是成功且快樂的，許多重要的研究都是在此時完成的，像是有關真菌的研究，其中包括真菌的成長、有性生殖、對植物的致病性以及分類學等。之後他輾轉到海勒大學（University of Halle）、斯特拉斯堡大學（University of Strasbourg）擔任教授，並且被選為改組後的斯特拉斯堡大學的首任校長。在這段時間，他的聲望日漸昌隆，在斯特拉斯堡大學建立了嶄新的現代化實驗室並且購置許多最新的儀器，許多歐美學者都慕名前來參訪或是進行研究，每周一晚上，狄巴里都會在圖書館舉行研討會，所有研究人員與來訪學者都在此熱烈討論新的發現。除了研究之外，狄巴里在教學方面也是極其出色的，他與同時代學者權威的作風相反，狄巴里提倡給予學生充分的自由，讓其自主研究、自己思考而不是只聽從老師的指示。正當狄巴里聲望如日中天之時，不幸地發現罹患惡性腫瘤，但他仍抱病出席在英國曼徹斯特舉辦的國際研討會，隨後病逝於斯特拉斯堡，享年57歲。
+                    </div>
+                </div>
+
+                <!-- <p>&nbsp;</p> -->
+
+                <div class="card border-0">
+                    <div class="card-body">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;狄巴里生前在真菌學上有著不可抹滅的偉大貢獻，著名的貢獻有: 馬鈴薯晚疫病的研究、地衣的共生現象、銹菌的轉主寄生等等。此外，他對於黴菌、酵母菌以及真菌的型態學研究，其結果基本確立了真菌學為一個獨立學門。狄巴里對真菌廣泛而細緻的研究，使其創出了許多專有術語，例如：內生菌 （endophyte） 、共生（symbiosis）、轉主寄生（heteroecious）……等等，並且許多術語至今仍被學界沿用。作為19世紀最具影響力的生物學家之一，狄巴里生前發表了100多篇學術論文並且深深地影響了許多後來成為著名學者的學生，他對植物病理學與真菌學的偉大貢獻，奠定了後世研究的基礎，無怪乎後人尊稱其為植物病理學之父與近代真菌學創始人。
+                    </div>
+                </div>
+
+                <!-- <p>&nbsp;</p> -->
+
+                <div class="text-center">
+                    <figure class="figure">
+                        <img src="../assets/de_bary.png"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">狄巴里33歲時照片<br>
+                            西元1864年於柏林拍攝。資料來源: Drews, G (2013) de Bary, Heinrich Anton.
+                            </figcaption>
+                    </figure>
+                </div>
+
+                <!-- <p>&nbsp;</p> -->
+
+                <!-- <h2 class="text-center">第二段</h2> -->
+                <!-- <div class="card border-0">
+                    <div class="card-body">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冰人奧茲雖然不幸地於 5000 多年前受傷身亡，但其留給後世人們大量史前人類的生活資訊，當然也包括對於真菌的日常應用。現在我們的生活依然和真菌有著密不可分的關係，從飲食中常常搭配的醬油，到生病時所服用的抗生素，都需要真菌的協助才得以生產。未來讓我們持續為大家介紹這些生活中的幫手吧！
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="col-12 col-lg-2" style="align-items: center;">
+
+                <hr style="color: teal;">
+                <h6 class="text-center" style="color: teal;">參考資料</h6>
+                <hr style="color: teal;">
+                <!-- <ol>
+                    <li>Amy Y. Rossman and Mary E. Palm. Why are Phytophthora and other Oomycota not true Fungi? The
+                        website of the American Phytopathological Society (APS)</li>
+                    <li>Meike Piepenbring (2015) Introduction to Mycology in the Tropics.</li>
+                </ol> -->             
+                <h6 style="font-size: small;">1. Drews, G (2013) de Bary, Heinrich Anton. In eLS, (Ed.)</h6>
+                <h6 style="font-size: small;">2. 鐘金湯和劉仲康，2004年10月382期，狄伯瑞–植物病理學之父及近代真菌學的創始人，科學發展。</h6>
+                
+                
+                <p>&nbsp;</p>
+
+                <hr style="color: teal;">
+                <h6 class="text-center" style="color: teal;">延伸閱讀</h6>
+                <hr style="color: teal;">                
+                <h6 style="font-size: small;"><a href="/articles_introduction/What_is_a_fungus_1.html" style="color: dodgerblue;">什麼是真菌？(1/2)</a></h6>
+                <h6 style="font-size: small;"><a href="/articles_introduction/What_is_a_fungus_2.html" style="color: dodgerblue;">什麼是真菌？(2/2)</a></h6>
+                
+            </div>
+
+            <!-- <a href="../species.html" class="back">返回物種介紹</a> -->
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); height: 80px;">
+            <p>© 2022 Copyright: 菌事 Fungal Stories</p>
+            <p style="margin-top: -10px;">Email: <a href="mailto: fungalstories@gmail.com">fungalstories@gmail.com</a></p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+        var click_times = 0
+        $(".navbar-toggler").click(function () {
+            click_times = click_times + 1
+            if (click_times % 2 == 1) {
+                $(".navbar-toggler").addClass("navbar-clicked");
+                $(".navbar-toggler-icon").addClass("navbar-icon-clicked");
+                $("#statusbar_outer_div").css("top", 250);
+            } else {
+                $(".navbar-toggler").removeClass("navbar-clicked");
+                $(".navbar-toggler-icon").removeClass("navbar-icon-clicked");
+                $("#statusbar_outer_div").css("top", 60);
+            }
+        })
+    </script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var document_h = $(document).height();
+                var window_w = $(document).width();
+                var window_h = $(window).height();
+                var max_scroll = document_h - window_h;
+                var current_pos = $(window).scrollTop();
+                // var new_w = (current_pos / max_scroll) * window_w;
+                // if (click_times % 2 == 1) {
+                //     console.log($(window).scrollTop());
+                //     $("#statusbar").css("width", ((current_pos - 190) / max_scroll) * window_w);
+                // } else {
+                //     console.log($(window).scrollTop());
+                //     $("#statusbar").css("width", (current_pos / max_scroll) * window_w);
+                // }
+                $("#statusbar").css("width", (current_pos / max_scroll) * window_w);
+                // $("#scrollpercent").html(parseInt(current_pos * 100 / max_scroll));
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
